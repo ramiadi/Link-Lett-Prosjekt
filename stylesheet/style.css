@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+}
+
+.bar {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar__image {
+  width: 6rem;
+}
+.bar__left {
+  padding-inline: 1rem;
+}
+.bar__heading {
+  border: 3px solid red;
+  display: flex;
+  flex-shrink: 1;
+}
+
+.bar__meny {
+  border: 3px solid red;
+  font-size: 1.5rem;
+}
+
+.bar__profil {
+  border: 2px solid black;
+  padding: 1rem;
+  border-radius: 100px;
+}
