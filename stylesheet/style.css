@@ -18,6 +18,52 @@ body {
 .bar__left {
   padding-inline: 1rem;
 }
+/* Dropdown knapp  */
+
+.bar__dropdownbtn {
+  background-color: green;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+}
+
+.bar__dropdown {
+  position: relative;
+  display: inline-block;
+}
+.bar__dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  min-width: 180px;
+  height: auto;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.bar__dropdown-content a {
+  color: black;
+  padding: 1rem 1.2rem;
+  display: block;
+  margin: 1rem;
+  background-color: white;
+}
+.bar__dropdown-content a:active {
+  background-color: #ddd;
+}
+
+.bar__dropdownbtn:focus + .bar__dropdown-content {
+  display: block;
+}
+.bar__dropdownbtn:focus {
+  background-color: blue;
+}
+.bar__dropdown-content a:hover {
+  background-color: lightgray;
+}
+
+/* Slutten av knapp */
 .bar__heading {
   border: 3px solid red;
   display: flex;
