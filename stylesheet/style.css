@@ -20,6 +20,7 @@ body {
 }
 /* Dropdown knapp  */
 
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover */
 .bar__dropdownbtn {
   background-color: green;
   color: white;
@@ -65,13 +66,11 @@ body {
 
 /* Slutten av knapp */
 .bar__heading {
-  border: 3px solid red;
   display: flex;
   flex-shrink: 1;
 }
 
 .bar__meny {
-  border: 3px solid red;
   font-size: 1.5rem;
 }
 
@@ -87,14 +86,13 @@ body {
 .page {
   display: flex;
   justify-content: space-between;
-  border: 3px solid red;
   margin-block-start: 2rem;
   margin-inline: 1rem;
   min-height: 70vh;
 }
 
+/* https://www.google.com/maps/place/Grenseveien+9,+11,+0571+Oslo/@59.9254139,10.7752215,17z/data=!3m1!4b1!4m9!1m2!10m1!1e4!3m5!1s0x46416e4441c171a5:0x113e98755787114b!8m2!3d59.9255984!4d10.7777312!16s%2Fg%2F11bw3hstyx?entry=ttu&g_ep=EgoyMDI0MTAxNC4wIKXMDSoASAFQAw%3D%3D */
 .page__kart {
-  border: 5px solid blue;
   width: 50rem;
 }
 .page__kartInfo {
@@ -103,16 +101,34 @@ body {
 }
 
 .page__info {
-  border: 3px solid black;
   margin-inline-start: 1rem;
-  width: 40rem;
-  height: 40vh;
+  width: 30rem;
+  max-height: 50vh;
   padding-inline: 1rem;
 }
 
 .page__tekstBoks {
   width: 50rem;
   margin-inline-start: 1rem;
-  border: 3px solid black;
   padding-inline: 1rem;
+}
+
+/* Modifiers (style) */
+
+.page__kart--style,
+.page__info--style,
+.page__tekstBoks--style,
+.page__kartInfo--style {
+  border-radius: 10px;
+  background-color: whitesmoke;
+  box-shadow: 10px 10px lightblue;
+}
+
+.page__info--style,
+.page__tekstBoks--style {
+  line-height: 1.5;
+}
+
+.page__tekstBoks--style {
+  font-size: 1.2rem;
 }
