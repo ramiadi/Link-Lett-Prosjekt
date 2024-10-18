@@ -113,22 +113,48 @@ body {
   padding-inline: 1rem;
 }
 
+.aktiviteter {
+  margin-block-start: 1rem;
+  margin-inline: 2rem;
+  display: flex;
+}
+.aktiviteter__kart {
+  width: 50vw;
+  height: 30rem;
+}
+.aktiviteter__kalender {
+  max-width: 50rem;
+}
+.aktiviteter__info {
+  margin-block-start: 2rem;
+  padding-inline-start: 1rem;
+  text-align: left;
+}
+.aktiviteter__boks {
+  display: flex;
+  flex-direction: column;
+  margin-inline-end: 2rem;
+}
+
 /* Modifiers (style) */
 
 .page__kart--style,
 .page__info--style,
 .page__tekstBoks--style,
-.page__kartInfo--style {
+.page__kartInfo--style,
+.aktiviteter__info--style {
   border-radius: 10px;
   background-color: whitesmoke;
   box-shadow: 10px 10px lightblue;
 }
 
 .page__info--style,
-.page__tekstBoks--style {
+.page__tekstBoks--style,
+.aktiviteter__info--style {
   line-height: 1.5;
 }
 
-.page__tekstBoks--style {
+.page__tekstBoks--style,
+.aktiviteter__info--style {
   font-size: 1.2rem;
 }
