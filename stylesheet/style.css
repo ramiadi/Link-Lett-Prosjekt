@@ -33,6 +33,9 @@ body {
   position: relative;
   display: inline-block;
 }
+.bar__dropdown:hover .bar__dropdown-content {
+  display: block;
+}
 .bar__dropdown-content {
   display: none;
   position: absolute;
@@ -54,12 +57,6 @@ body {
   background-color: #ddd;
 }
 
-.bar__dropdownbtn:focus + .bar__dropdown-content {
-  display: block;
-}
-.bar__dropdownbtn:focus {
-  background-color: blue;
-}
 .bar__dropdown-content a:hover {
   background-color: lightgray;
 }
@@ -103,7 +100,6 @@ body {
 .page__info {
   margin-inline-start: 1rem;
   width: 30rem;
-  max-height: 50vh;
   padding-inline: 1rem;
 }
 
@@ -155,6 +151,7 @@ body {
 }
 
 .page__tekstBoks--style,
+.page__info--style,
 .aktiviteter__info--style {
   font-size: 1.2rem;
 }
