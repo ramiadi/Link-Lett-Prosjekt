@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+</head>
+
+<body>
+
+    <header>
+        <header class="bar">
+
+            <div class="bar__left">
+                <div class="bar__dropdown">
+                    <button class="bar__dropdownbtn">☰</button>
+                    <div class="bar__dropdown-content">
+                        <a href="index.html">Forside</a>
+                        <a href="aktiviteter.html">Aktiviteter</a>
+                        <a href="#">Meldinger</a>
+                        <a href="#">Om oss</a>
+                        <a href="#">Logg inn</a>
+                        <a href="">Innstillinger</a>
+                    </div>
+                </div>
+                <a href="#" class="bar__profil">Brukerprofil</a>
+            </div>
+
+            <h1 class="bar__heading">Aktiviteter</h1>
+            <img src="images/link-lett-logo.jpg" alt="Logo av Link Lett" class="bar__image">
+
+        </header>
+    </header>
+
+    <div class="aktiviteter">
+
+        <div class="aktiviteter__boks">
+            <div class="aktiviteter__kart">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.4054663419408!2d10.775221476470323!3d59.925413863165915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e4441c171a5%3A0x113e98755787114b!2sGrenseveien%209%2C%2011%2C%200571%20Oslo!5e0!3m2!1sno!2sno!4v1729167729927!5m2!1sno!2sno"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    class="page__kartInfo page__kartInfo--style">
+                </iframe>
+            </div>
+            <div class="aktiviteter__info aktiviteter__info--style">
+                <h2>Ting som skjer denne uken:</h2>
+
+                <ul>
+                    <li>Taylor Swift kommer på torsdag</li>
+                    <li>Arrangement hos Telenor Arena</li>
+                    <li>Ny spillklubb har kommet på Helsfyr</li>
+                    <li>Ny film av Joker har kommet ut til kino</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="aktiviteter__kalender aktiviteter__kalender--style">
+            <!-- https://dash.elfsight.com/apps/event-calendar -->
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+            <div class="elfsight-app-ef8a9fb0-8f14-493a-8302-3fa01d1785ec" data-elfsight-app-lazy></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
