@@ -132,13 +132,39 @@ body {
   margin-inline-end: 2rem;
 }
 
+.meldinger__page {
+  padding: 1rem 1rem;
+}
+
+.meldinger__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-block: 1rem;
+  padding-block: 0.5rem;
+  text-decoration: none;
+  color: black;
+}
+.meldinger__image {
+  width: 4rem;
+  margin-inline-start: 0.3rem;
+  border-radius: 50px;
+}
+.meldinger__link p {
+  padding-inline-start: 2rem;
+}
+.meldinger__link:hover {
+  background-color: lightgray;
+}
+
 /* Modifiers (style) */
 
 .page__kart--style,
 .page__info--style,
 .page__tekstBoks--style,
 .page__kartInfo--style,
-.aktiviteter__info--style {
+.aktiviteter__info--style,
+.meldinger__link--style {
   border-radius: 10px;
   background-color: whitesmoke;
   box-shadow: 10px 10px lightblue;
@@ -152,6 +178,7 @@ body {
 
 .page__tekstBoks--style,
 .page__info--style,
-.aktiviteter__info--style {
+.aktiviteter__info--style,
+.meldinger__link--style {
   font-size: 1.2rem;
 }
