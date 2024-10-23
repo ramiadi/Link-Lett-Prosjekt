@@ -108,6 +108,7 @@ body {
   padding-inline: 1rem;
 }
 
+/* Aktiviteter */
 .aktiviteter {
   margin-block-start: 1rem;
   margin-inline: 2rem;
@@ -131,6 +132,7 @@ body {
   margin-inline-end: 2rem;
 }
 
+/* Meldinger */
 .meldinger__page {
   padding: 1rem 1rem;
 }
