@@ -4,6 +4,27 @@ body {
   background-color: grey;
 }
 
+@media screen and (max-width: 800px) {
+  .aktiviteter {
+    display: flex;
+    flex-direction: column;
+  }
+  .aktiviteter__info {
+    margin-block-end: 2rem;
+  }
+  .aktiviteter__kart {
+    width: 85vw;
+    height: 20rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .aktiviteter__kart {
+    width: 50vw;
+    height: 30rem;
+  }
+}
+
 /* Starten av header */
 .bar {
   background-color: aqua;
@@ -41,8 +62,6 @@ body {
   position: absolute;
   background-color: grey;
   min-width: 180px;
-  height: auto;
-  left: 0;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
@@ -83,41 +102,36 @@ body {
 .page {
   display: flex;
   justify-content: space-between;
-  margin-block-start: 2rem;
-  margin-inline: 1rem;
+  margin: 2rem 1rem;
 }
 
 /* https://www.google.com/maps/place/Grenseveien+9,+11,+0571+Oslo/@59.9254139,10.7752215,17z/data=!3m1!4b1!4m9!1m2!10m1!1e4!3m5!1s0x46416e4441c171a5:0x113e98755787114b!8m2!3d59.9255984!4d10.7777312!16s%2Fg%2F11bw3hstyx?entry=ttu&g_ep=EgoyMDI0MTAxNC4wIKXMDSoASAFQAw%3D%3D */
 .page__kart {
   width: 50rem;
 }
-.page__kartInfo {
+.page__kartInfo,
+.aktiviteter__kartInfo {
   width: 100%;
   height: 100%;
 }
-
 .page__info {
-  margin-inline-start: 1rem;
-  width: 30rem;
-  padding-inline: 1rem;
+  width: 50rem;
 }
-
 .page__tekstBoks {
   width: 50rem;
-  margin-inline-start: 1rem;
+}
+.page__info,
+.page__tekstBoks {
   padding-inline: 1rem;
+  margin-inline-start: 1rem;
 }
 
 /* Aktiviteter */
 .aktiviteter {
-  margin-block-start: 1rem;
-  margin-inline: 2rem;
+  margin: 1rem 2rem;
   display: flex;
 }
-.aktiviteter__kart {
-  width: 50vw;
-  height: 30rem;
-}
+
 .aktiviteter__kalender {
   max-width: 50rem;
 }
@@ -126,6 +140,7 @@ body {
   padding-inline-start: 1rem;
   text-align: left;
 }
+
 .aktiviteter__boks {
   display: flex;
   flex-direction: column;
@@ -134,12 +149,11 @@ body {
 
 /* Meldinger */
 .meldinger__page {
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 
 .meldinger__link {
   display: flex;
-  flex-direction: row;
   align-items: center;
   margin-block: 1rem;
   padding-block: 0.5rem;
@@ -162,14 +176,12 @@ body {
 .om-oss {
   display: flex;
   flex-direction: row;
-  margin-block: 1rem;
-  margin-inline: 1rem;
+  margin: 1rem;
 }
 .om-oss__left {
   display: flex;
   flex-direction: row;
-  padding-inline: 1rem;
-  padding-block: 1rem;
+  padding: 1rem;
   max-height: 60vh;
 }
 .om-oss__kontakt {
@@ -226,10 +238,6 @@ body {
 .om-oss__team {
   display: flex;
 }
-.om-oss__text {
-  display: flex;
-  flex-direction: column;
-}
 
 .om-oss__image2 {
   max-width: 6rem;
@@ -242,8 +250,9 @@ body {
 }
 
 .om-oss__prosjekt {
-  height: fit-content;
+  border: 1px solid gray;
 }
+
 .om-oss__prosjekt p {
   margin-inline: 1rem;
 }
@@ -253,9 +262,9 @@ body {
 }
 .om-oss__image3 {
   width: 100%;
-  max-height: 40vh;
   border-top-right-radius: 10px;
 }
+
 /* Modifiers (style) */
 
 .page__kart--style,
@@ -264,7 +273,8 @@ body {
 .page__kartInfo--style,
 .aktiviteter__info--style,
 .meldinger__link--style,
-.om-oss__left--style {
+.om-oss__left--style,
+.aktiviteter__kartInfo--style {
   border-radius: 10px;
   background-color: whitesmoke;
   box-shadow: 10px 10px lightblue;
