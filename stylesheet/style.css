@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: grey;
+  background-color: #fff5ee;
 }
 
 @media screen and (max-width: 800px) {
@@ -27,7 +27,8 @@ body {
 
 /* Starten av header */
 .bar {
-  background-color: aqua;
+  /* background-color: #00274d; */
+  background-color: #1e3c6e;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,11 +40,14 @@ body {
 .bar__left {
   padding-inline: 1rem;
 }
+.bar__heading {
+  color: white;
+}
 /* Dropdown knapp  */
 
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover */
 .bar__dropdownbtn {
-  background-color: green;
+  background-color: #00274d;
   color: white;
   padding: 0.5rem;
   font-size: 1rem;
@@ -60,7 +64,7 @@ body {
 .bar__dropdown-content {
   display: none;
   position: absolute;
-  background-color: grey;
+  background-color: #00274d;
   min-width: 180px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -70,14 +74,16 @@ body {
   padding: 1rem 1.2rem;
   display: block;
   margin: 1rem;
-  background-color: white;
+  background-color: #00274d;
+  color: white;
 }
 .bar__dropdown-content a:active {
   background-color: #ddd;
 }
 
 .bar__dropdown-content a:hover {
-  background-color: lightgray;
+  background-color: #1e3c6e;
+  border: 1px solid #faf9f6;
 }
 
 /* Slutten av knapp */
@@ -182,7 +188,7 @@ body {
   display: flex;
   flex-direction: row;
   padding: 1rem;
-  max-height: 60vh;
+  max-height: 70vh;
 }
 .om-oss__kontakt {
   text-align: center;
@@ -268,7 +274,6 @@ body {
 /* Innstillinger */
 
 .innstillinger__container {
-  background-color: grey;
   display: grid;
   grid-template-columns: auto auto;
   gap: 20px;
@@ -278,6 +283,13 @@ body {
   text-align: center;
 }
 .innstillinger__container dt {
+  font-weight: 700;
+}
+.innstillinger__container a {
+  color: black;
+  font-weight: 500;
+}
+.innstillinger__container a:hover {
   font-weight: 700;
 }
 
@@ -300,23 +312,23 @@ body {
 .aktiviteter__kartInfo--style,
 .innstillinger__item--style {
   border-radius: 10px;
-  background-color: whitesmoke;
-  box-shadow: 10px 10px lightblue;
+  background-color: #faf9f6;
+  box-shadow: 8px 8px #1e3c6e;
 }
 
 .om-oss__right--style,
 .om-oss__prosjekt--style {
-  background-color: whitesmoke;
+  background-color: #f0f0f0;
 }
 .om-oss__right--style {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  box-shadow: 10px 10px lightblue;
+  box-shadow: 8px 8px #1e3c6e;
 }
 .om-oss__prosjekt--style {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  box-shadow: 10px 10px lightblue;
+  box-shadow: 2px 8px #1e3c6e;
 }
 
 .page__info--style,
