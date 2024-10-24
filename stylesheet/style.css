@@ -265,6 +265,29 @@ body {
   border-top-right-radius: 10px;
 }
 
+/* Innstillinger */
+
+.innstillinger__container {
+  background-color: grey;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  padding: 20px;
+}
+.innstillinger__container h2 {
+  text-align: center;
+}
+.innstillinger__container dt {
+  font-weight: 700;
+}
+
+.innstillinger__item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Modifiers (style) */
 
 .page__kart--style,
@@ -274,7 +297,8 @@ body {
 .aktiviteter__info--style,
 .meldinger__link--style,
 .om-oss__left--style,
-.aktiviteter__kartInfo--style {
+.aktiviteter__kartInfo--style,
+.innstillinger__item--style {
   border-radius: 10px;
   background-color: whitesmoke;
   box-shadow: 10px 10px lightblue;
@@ -299,7 +323,8 @@ body {
 .page__tekstBoks--style,
 .aktiviteter__info--style,
 .om-oss__text--style,
-.om-oss__prosjekt--style {
+.om-oss__prosjekt--style,
+.innstillinger__item--style {
   line-height: 1.5;
 }
 
@@ -308,6 +333,7 @@ body {
 .aktiviteter__info--style,
 .meldinger__link--style,
 .om-oss__text--style,
-.om-oss__prosjekt--style {
+.om-oss__prosjekt--style,
+.innstillinger__item--style {
   font-size: 1.2rem;
 }
