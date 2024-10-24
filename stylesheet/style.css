@@ -45,7 +45,7 @@ body {
 }
 /* Dropdown knapp  */
 
-/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover */
+/* fra linje 48 til linje 88 er mesteparten kopiert inn (w3schools, 2024) */
 .bar__dropdownbtn {
   background-color: #00274d;
   color: white;
@@ -111,7 +111,6 @@ body {
   margin: 2rem 1rem;
 }
 
-/* https://www.google.com/maps/place/Grenseveien+9,+11,+0571+Oslo/@59.9254139,10.7752215,17z/data=!3m1!4b1!4m9!1m2!10m1!1e4!3m5!1s0x46416e4441c171a5:0x113e98755787114b!8m2!3d59.9255984!4d10.7777312!16s%2Fg%2F11bw3hstyx?entry=ttu&g_ep=EgoyMDI0MTAxNC4wIKXMDSoASAFQAw%3D%3D */
 .page__kart {
   width: 50rem;
 }
@@ -349,3 +348,9 @@ body {
 .innstillinger__item--style {
   font-size: 1.2rem;
 }
+
+/* Kildeliste */
+
+/* W3Schools. (u.å.). CSS Buttons. W3Schools. Hentet 24. oktober 2024 fra https://www.w3schools.com/css/css3_buttons.asp */
+
+/* Google. (u.å.). Grenseveien 9, 0571 Oslo. Google Maps. Hentet 24. oktober 2024 fra https://www.google.com/maps/place/Grenseveien+9,+11,+0571+Oslo/@59.9254139,10.7752215,17z/data=!3m1!4b1!4m9!1m2!10m1!1e4!3m5!1s0x46416e4441c171a5:0x113e98755787114b!8m2!3d59.9255984!4d10.7777312!16s%2Fg%2F11bw3hstyx?entry=ttu&g_ep=EgoyMDI0MTAxNC4wIKXMDSoASAFQAw%3D%3D */
