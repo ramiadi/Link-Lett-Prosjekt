@@ -346,6 +346,60 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Logg inn  */
+
+.logg-inn {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff5ee;
+}
+.logg-inn__middle {
+  text-align: center;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  width: 20rem;
+}
+.logg-inn__logo {
+  display: flex;
+  align-items: center;
+  margin-block-end: 1.2rem;
+}
+
+.logg-inn__image {
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-inline-end: 1.2rem;
+}
+.logg-inn__heading {
+  color: #1e3c6e;
+}
+
+.logg-inn__input-group {
+  margin-block-end: 1rem;
+  padding-inline-end: 1rem;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.logg-inn__button {
+  width: 100%;
+  padding: 0.5rem;
+}
+.logg-inn__button:hover {
+  background-color: #00274d;
+}
 /* Modifiers (style) */
 
 .page__kart--style,
@@ -396,6 +450,14 @@ body {
   font-size: 1.2rem;
 }
 
+.logg-inn__button--style {
+  background-color: #1e3c6e;
+  color: white;
+  border: none;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+}
 /* Kildeliste */
 
 /* W3Schools. (u.å.). CSS Buttons. W3Schools. Hentet 24. oktober 2024 fra https://www.w3schools.com/css/css3_buttons.asp */
