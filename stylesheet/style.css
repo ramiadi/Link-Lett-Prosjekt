@@ -5,6 +5,24 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+  .page {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .page__kart,
+  .page__info,
+  .page__tekstBoks,
+  .om-oss__left,
+  .om-oss__right,
+  .om-oss__prosjekt {
+    margin-block-end: 1rem;
+  }
+
+  .page__kart,
+  .om-oss__image3 {
+    height: 20rem;
+  }
+
   .aktiviteter {
     display: flex;
     flex-direction: column;
@@ -16,12 +34,45 @@ body {
     width: 85vw;
     height: 20rem;
   }
+  .aktiviteter__info {
+    width: 100%;
+  }
+
+  .om-oss {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  .om-oss__right--style {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .om-oss__prosjekt--style {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .om-oss__image3 {
+    border-top-left-radius: 10px;
+  }
+  .innstillinger__container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 800px) {
   .aktiviteter__kart {
     width: 50vw;
     height: 30rem;
+  }
+  .om-oss__right {
+    margin-inline-start: 2rem;
+  }
+  .om-oss__prosjekt {
+    border: 1px solid gray;
+  }
+  .innstillinger__container {
+    display: grid;
+    grid-template-columns: auto auto;
   }
 }
 
@@ -237,9 +288,6 @@ body {
   justify-content: center;
   margin-inline-start: 1rem;
 }
-.om-oss__right {
-  margin-inline-start: 2rem;
-}
 
 .om-oss__team {
   display: flex;
@@ -253,13 +301,11 @@ body {
 .om-oss__link {
   display: flex;
   flex-direction: column;
+  padding-inline-start: 1rem;
 }
 
-.om-oss__prosjekt {
-  border: 1px solid gray;
-}
-
-.om-oss__prosjekt p {
+.om-oss__prosjekt p,
+.om-oss__right p {
   margin-inline: 1rem;
 }
 .om-oss__right {
@@ -274,10 +320,10 @@ body {
 /* Innstillinger */
 
 .innstillinger__container {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 20px;
-  padding: 20px;
+  /* display: grid;
+  grid-template-columns: auto auto; */
+  gap: 1.5rem;
+  padding: 1.5rem;
 }
 .innstillinger__container h2 {
   text-align: center;
@@ -295,7 +341,7 @@ body {
 
 .innstillinger__item {
   background-color: white;
-  padding: 20px;
+  padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
