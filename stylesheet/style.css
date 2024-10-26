@@ -391,10 +391,14 @@ body {
   padding-inline-end: 1rem;
 }
 
-input[type="email"],
-input[type="password"],
-input[type="text"],
-input[type="tel"] {
+.logg-inn__input-group input[type="email"],
+.logg-inn__input-group input[type="password"],
+.logg-inn__input-group input[type="text"],
+.logg-inn__input-group input[type="tel"],
+.signer-inn__input-group input[type="email"],
+.signer-inn__input-group input[type="password"],
+.signer-inn__input-group input[type="text"],
+.signer-inn__input-group input[type="tel"] {
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #ccc;
