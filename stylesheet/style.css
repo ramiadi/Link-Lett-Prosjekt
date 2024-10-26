@@ -348,7 +348,8 @@ body {
 
 /* Logg inn  */
 
-.logg-inn {
+.logg-inn,
+.signer-inn {
   height: 100vh;
   margin: 0;
   display: flex;
@@ -357,7 +358,8 @@ body {
   align-items: center;
   background-color: #fff5ee;
 }
-.logg-inn__middle {
+.logg-inn__middle,
+.signer-inn__middle {
   text-align: center;
   border-radius: 8px;
   background-color: #ffffff;
@@ -365,39 +367,47 @@ body {
   padding: 1.5rem;
   width: 20rem;
 }
-.logg-inn__logo {
+.logg-inn__logo,
+.signer-inn__logo {
   display: flex;
   align-items: center;
   margin-block-end: 1.2rem;
 }
 
-.logg-inn__image {
+.logg-inn__image,
+.signer-inn__image {
   width: 3.2rem;
   height: 3.2rem;
   margin-inline-end: 1.2rem;
 }
-.logg-inn__heading {
+.logg-inn__heading,
+.signer-inn__heading {
   color: #1e3c6e;
 }
 
-.logg-inn__input-group {
+.logg-inn__input-group,
+.signer-inn__input-group {
   margin-block-end: 1rem;
   padding-inline-end: 1rem;
 }
 
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="text"],
+input[type="tel"] {
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-.logg-inn__button {
+.logg-inn__button,
+.signer-inn__button {
   width: 100%;
   padding: 0.5rem;
 }
-.logg-inn__button:hover {
+.logg-inn__button:hover,
+.signer-inn__button:hover {
   background-color: #00274d;
 }
 /* Modifiers (style) */
@@ -450,7 +460,8 @@ input[type="password"] {
   font-size: 1.2rem;
 }
 
-.logg-inn__button--style {
+.logg-inn__button--style,
+.signer-inn__button--style {
   background-color: #1e3c6e;
   color: white;
   border: none;
