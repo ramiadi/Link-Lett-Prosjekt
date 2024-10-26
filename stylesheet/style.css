@@ -96,7 +96,7 @@ body {
 }
 /* Dropdown knapp  */
 
-/* fra linje 48 til linje 88 er mesteparten kopiert inn (w3schools, 2024). */
+/* fra linje 100 til linje 138 er mesteparten kopiert inn (w3schools, 2024). */
 .bar__dropdownbtn {
   background-color: #00274d;
   color: white;
@@ -428,6 +428,7 @@ body {
   border-radius: 10px;
   background-color: #faf9f6;
   box-shadow: 8px 8px #1e3c6e;
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
 .om-oss__right--style,
