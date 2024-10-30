@@ -15,9 +15,7 @@ body {
   .page__kart,
   .page__info,
   .page__tekstBoks,
-  .om-oss__left,
-  .om-oss__right,
-  .om-oss__prosjekt {
+  .om-oss__left {
     margin-block-end: 1rem;
   }
 
@@ -45,14 +43,7 @@ body {
     display: flex;
     flex-wrap: wrap-reverse;
   }
-  .om-oss__right--style {
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-  .om-oss__prosjekt--style {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-  }
+
   .om-oss__image3 {
     border-top-left-radius: 10px;
   }
@@ -67,12 +58,7 @@ body {
     width: 50vw;
     height: 30rem;
   }
-  .om-oss__right {
-    margin-inline-start: 2rem;
-  }
-  .om-oss__prosjekt {
-    border: 1px solid gray;
-  }
+
   .innstillinger__container {
     display: grid;
     grid-template-columns: auto auto;
@@ -434,28 +420,9 @@ body {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-.om-oss__right--style,
-.om-oss__prosjekt--style {
-  background-color: #f0f0f0;
-}
-.om-oss__right--style {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  /* box-shadow: 8px 8px #1e3c6e; */
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-}
-.om-oss__prosjekt--style {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  /* box-shadow: 2px 8px #1e3c6e; */
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-}
-
 .page__info--style,
 .page__tekstBoks--style,
 .aktiviteter__info--style,
-.om-oss__text--style,
-.om-oss__prosjekt--style,
 .innstillinger__item--style {
   line-height: 1.5;
 }
@@ -464,8 +431,6 @@ body {
 .page__info--style,
 .aktiviteter__info--style,
 .meldinger__link--style,
-.om-oss__text--style,
-.om-oss__prosjekt--style,
 .innstillinger__item--style {
   font-size: 1.2rem;
 }
