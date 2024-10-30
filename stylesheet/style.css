@@ -175,9 +175,8 @@ body {
   width: 100%;
   height: 100%;
 }
-.page__info {
-  width: 50rem;
-}
+
+.page__info,
 .page__tekstBoks {
   width: 50rem;
 }
@@ -480,6 +479,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+
 /* Kildeliste */
 
 /* W3Schools. (u.å.). CSS Buttons. W3Schools. Hentet 24. oktober 2024 fra https://www.w3schools.com/css/css3_buttons.asp */
