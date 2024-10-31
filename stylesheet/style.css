@@ -19,8 +19,7 @@ body {
     margin-block-end: 1rem;
   }
 
-  .page__kart,
-  .om-oss__image3 {
+  .page__kart {
     height: 20rem;
   }
 
@@ -28,7 +27,8 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .aktiviteter__info {
+  .aktiviteter__info,
+  .om-oss__prosjekt {
     margin-block-end: 2rem;
   }
   .aktiviteter__kart {
@@ -44,12 +44,13 @@ body {
     flex-wrap: wrap-reverse;
   }
 
-  .om-oss__image3 {
-    border-top-left-radius: 10px;
-  }
   .innstillinger__container {
     display: flex;
     flex-direction: column;
+  }
+  .om-oss__column {
+    width: 100%;
+    display: block;
   }
 }
 
@@ -62,6 +63,12 @@ body {
   .innstillinger__container {
     display: grid;
     grid-template-columns: auto auto;
+  }
+
+  .om-oss__prosjekt {
+    margin-inline-start: 2rem;
+    max-height: fit-content;
+    max-width: 50rem;
   }
 }
 
@@ -278,32 +285,53 @@ body {
   margin-inline-start: 1rem;
 }
 
-.om-oss__team {
-  display: flex;
-}
-
-.om-oss__image2 {
-  max-width: 6rem;
-  border-radius: 50px;
-}
-
-.om-oss__link {
-  display: flex;
-  flex-direction: column;
-  padding-inline-start: 1rem;
-}
-
-.om-oss__prosjekt p,
-.om-oss__right p {
+.om-oss__prosjekt p {
   margin-inline: 1rem;
 }
-.om-oss__right {
-  text-align: center;
-  font-size: 2rem;
+
+.om-oss__prosjekt {
+  max-height: fit-content;
 }
-.om-oss__image3 {
-  width: 100%;
-  border-top-right-radius: 10px;
+
+.om-oss__section {
+  text-align: center;
+  color: white;
+  background-color: #1e3c6e;
+  background-image: linear-gradient(to right, rgb(102, 118, 120), #003366);
+}
+
+.om-oss__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.om-oss__column {
+  float: left;
+  width: 30%;
+  margin-block-end: 1rem;
+  padding: 0 8px;
+}
+.om-oss__card {
+  margin: 0.5rem;
+  overflow-wrap: break-word;
+}
+.om-oss__section {
+  padding: 50px;
+  text-align: center;
+}
+.om-oss__container {
+  padding: 0 1rem;
+}
+
+.om-oss__container::after,
+.om-oss__row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.om-oss__title {
+  color: grey;
 }
 
 /* Innstillinger */
@@ -414,8 +442,8 @@ body {
 .om-oss__left--style,
 .aktiviteter__kartInfo--style,
 .innstillinger__item--style,
-.om-oss__right--style,
-.om-oss__prosjekt--style {
+.om-oss__prosjekt--style,
+.om-oss__card--style {
   border-radius: 10px;
   background-color: #faf9f6;
   /* box-shadow: 8px 8px #1e3c6e; */
@@ -425,7 +453,8 @@ body {
 .page__info--style,
 .page__tekstBoks--style,
 .aktiviteter__info--style,
-.innstillinger__item--style {
+.innstillinger__item--style,
+.om-oss__prosjekt--style {
   line-height: 1.5;
 }
 
@@ -433,7 +462,8 @@ body {
 .page__info--style,
 .aktiviteter__info--style,
 .meldinger__link--style,
-.innstillinger__item--style {
+.innstillinger__item--style,
+.om-oss__prosjekt--style {
   font-size: 1.2rem;
 }
 
