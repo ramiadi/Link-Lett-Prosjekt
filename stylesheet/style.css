@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #fff5ee;
+  background-color: white;
   font-family: Work Sans;
 }
 
@@ -92,23 +92,27 @@ body {
 }
 /* Dropdown knapp  */
 
-/* fra linje 100 til linje 138 er mesteparten kopiert inn (w3schools, 2024). */
+/* fra linje 96 til 121 linje er mesteparten kopiert inn (w3schools, 2024). */
+
+/* Dette avsnittet er hentet fra en nettside (w3schools, 2024). */
 .bar__dropdownbtn {
   background-color: #336699;
-  /* background-image: linear-gradient(to right, #6aaed6, #336699); */
   color: white;
   padding: 0.5rem;
   font-size: 1rem;
   border: none;
 }
 
+/* Dette avsnittet er hentet fra en nettside (w3schools, 2024). */
 .bar__dropdown {
   position: relative;
   display: inline-block;
 }
+/* Dette avsnittet er hentet fra en nettside (w3schools, 2024). */
 .bar__dropdown:hover .bar__dropdown-content {
   display: block;
 }
+/* Dette avsnittet er hentet fra en nettside (w3schools, 2024). */
 .bar__dropdown-content {
   display: none;
   position: absolute;
@@ -159,10 +163,13 @@ body {
   margin: 2rem 1rem;
 }
 
-/* fra linje 115 til linje 121 har jeg puttet inn kart fra google maps (Google, 2024). */
+/* fra linje 170 til linje 177 har jeg puttet inn kart fra google maps (Google, 2024). */
+
+/* Dette avsnittet er hentet fra en nettside (Google, 2024). */
 .page__kart {
   width: 50rem;
 }
+/* Dette avsnittet er hentet fra en nettside (Google, 2024). */
 .page__kartInfo,
 .aktiviteter__kartInfo {
   width: 100%;
@@ -337,8 +344,6 @@ body {
 /* Innstillinger */
 
 .innstillinger__container {
-  /* display: grid;
-  grid-template-columns: auto auto; */
   gap: 1.5rem;
   padding: 1.5rem;
 }
@@ -446,7 +451,6 @@ body {
 .om-oss__card--style {
   border-radius: 10px;
   background-color: #faf9f6;
-  /* box-shadow: 8px 8px #1e3c6e; */
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -479,6 +483,10 @@ body {
 
 /* Kildeliste */
 
-/* W3Schools. (u.å.). CSS Buttons. W3Schools. Hentet 24. oktober 2024 fra https://www.w3schools.com/css/css3_buttons.asp */
+/*  */
+
+/* Google. (u.å.). Google Fonts. Hentet 31. oktober 2024 fra https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap */
 
 /* Google. (u.å.). Grenseveien 9, 0571 Oslo. Google Maps. Hentet 24. oktober 2024 fra https://www.google.com/maps/place/Grenseveien+9,+11,+0571+Oslo/@59.9254139,10.7752215,17z/data=!3m1!4b1!4m9!1m2!10m1!1e4!3m5!1s0x46416e4441c171a5:0x113e98755787114b!8m2!3d59.9255984!4d10.7777312!16s%2Fg%2F11bw3hstyx?entry=ttu&g_ep=EgoyMDI0MTAxNC4wIKXMDSoASAFQAw%3D%3D */
+
+/* W3Schools. (u.å.). CSS Buttons. W3Schools. Hentet 24. oktober 2024 fra https://www.w3schools.com/css/css3_buttons.asp */
