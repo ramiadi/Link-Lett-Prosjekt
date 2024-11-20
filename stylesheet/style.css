@@ -419,6 +419,15 @@ body {
   padding-inline-end: 1rem;
 }
 
+.logg-inn__link {
+  color: black;
+}
+.logg-inn__link:hover {
+  transition: 0.3s ease;
+  background-color: #e6f0fa;
+  transform: scale(1.05);
+}
+
 .logg-inn__input-group input[type="email"],
 .logg-inn__input-group input[type="password"],
 .logg-inn__input-group input[type="text"],
